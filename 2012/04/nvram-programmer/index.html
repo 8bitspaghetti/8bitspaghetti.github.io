@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>NVRAM Programmer | 8 Bit Spaghetti</title>
+<!-- Platform WordPress Framework By PageLines - www.PageLines.com -->
+<link rel="shortcut icon" href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/favicon-pagelinescopy.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/apple-touch.png" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<!--[if lt IE 8]> <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script> <![endif]-->
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="NVRAM Programmer" />
+	<meta property="og:url" content="http://8-bitspaghetti.com/2012/04/nvram-programmer/" />
+	<meta property="og:image" content="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01824.jpg" />
+	<meta property="article:published_time" content="2012-04-21" />
+	<meta property="article:modified_time" content="2012-04-21" />
+	<meta property="article:author" content="http://8-bitspaghetti.com/author/spel3o/" />
+	<meta property="article:section" content="Design" />
+	<meta property="og:site_name" content="8 Bit Spaghetti" />
+	<meta name="twitter:card" content="summary" />
+<!-- /SEO Ultimate -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="8 Bit Spaghetti &raquo; Feed" href="http://8-bitspaghetti.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="8 Bit Spaghetti &raquo; Comments Feed" href="http://8-bitspaghetti.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="8 Bit Spaghetti &raquo; NVRAM Programmer Comments Feed" href="http://8-bitspaghetti.com/2012/04/nvram-programmer/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/8-bitspaghetti.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.16"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='pagelines-stylesheet-css'  href='http://8-bitspaghetti.com/wp-content/themes/platform/style.css?ver=144-021315213411' type='text/css' media='all' />
+<!--[if IE 7]>
+<link rel='stylesheet' id='ie7-style-css'  href='http://8-bitspaghetti.com/wp-content/themes/platform/css/ie7.css?ver=1.4.4' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://8-bitspaghetti.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://8-bitspaghetti.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://8-bitspaghetti.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://8-bitspaghetti.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://8-bitspaghetti.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Microinstructions Done' href='http://8-bitspaghetti.com/2012/04/microinstructions/' />
+<link rel='next' title='Test Time' href='http://8-bitspaghetti.com/2012/04/test-time/' />
+<meta name="generator" content="WordPress 4.9.16" />
+<link rel="canonical" href="http://8-bitspaghetti.com/2012/04/nvram-programmer/" />
+<link rel='shortlink' href='http://8-bitspaghetti.com/?p=92' />
+<link rel="alternate" type="application/json+oembed" href="http://8-bitspaghetti.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2F8-bitspaghetti.com%2F2012%2F04%2Fnvram-programmer%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://8-bitspaghetti.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2F8-bitspaghetti.com%2F2012%2F04%2Fnvram-programmer%2F&#038;format=xml" />
+<link rel="stylesheet" id="dynamic-css" href="http://8-bitspaghetti.com/wp-content/themes/platform/css/dynamic.css?ver=144-021315213411" type="text/css" media="all" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+<body class="post-template-default single single-post postid-92 single-format-standard full_width ttype-single tmain-single">
+<div id="site" class="one-sidebar-right"> <!-- #site // Wraps #header, #page-main, #footer - closed in footer -->
+	<div id="page"> <!-- #page // Wraps #header, #page-main - closed in footer -->
+		<div id="page-canvas">
+						<div id="header" class="container-group fix">
+				<div class="outline">
+					<div id="branding" class="container fix">
+	<div class="texture">
+		<div class="content">
+			<div class="content-pad">
+<div class="branding_wrap">
+	<a class="mainlogo-link" href="http://8-bitspaghetti.com" title="8 Bit Spaghetti"><img class="mainlogo-img" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/banner.png" alt="8 Bit Spaghetti" /></a>		
+	
+	<div class="icons" style="bottom: 0px; right: px;">
+
+				<a target="_blank" href="http://8-bitspaghetti.com/feed/" class="rsslink"></a>
+		
+												<a target="_blank" href="http://facebook.com/192.168.kyle.hovey" class="facebooklink"></a>
+									<a target="_blank" href="http://www.linkedin.com/pub/kyle-hovey/50/193/6b8" class="linkedinlink"></a>
+									<a target="_blank" href="http://youtube.com/kenkwanaproductions" class="youtubelink"></a>
+							</div>
+</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="primary-nav" class="container fix">
+	<div class="texture">
+		<div class="content">
+			<div class="content-pad">
+	<div id="nav_row" class="main_nav fix">
+	
+	<ul id="menu-nav" class="main-nav">
+		<li class="page_item page-item-52"><a href="http://8-bitspaghetti.com/about-me/">About Me</a></li>
+	</ul><form method="get" class="searchform" action="http://8-bitspaghetti.com/" onsubmit="this.submit();return false;">
+	<fieldset>
+		<input type="text" value="Search" name="s" class="searchfield" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}" />
+
+		<input type="image" class="submit btn" name="submit" src="http://8-bitspaghetti.com/wp-content/themes/platform/images/search-btn.png" alt="Go" />
+	</fieldset>
+</form>
+	</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+				</div>
+			</div>
+						<div id="page-main" class="container-group fix"> <!-- #page-main // closed in footer -->
+				<div id="dynamic-content" class="outline fix">
+					<div id="maincontent" class="container fix">
+	<div class="texture">
+		<div class="content">
+			<div class="content-pad">
+<div id="pagelines_content" class="one-sidebar-right fix">
+	
+		<div id="column-wrap" class="fix">
+		
+				<div id="column-main" class="mcolumn fix">
+			<div class="mcolumn-pad" >
+				<div id="postnav" class="copy fix">
+	<div class="copy-pad">
+   			<div class="post-nav fix"> 
+			<span class="previous"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/" rel="prev">Microinstructions Done</a></span> 
+			<span class="next"><a href="http://8-bitspaghetti.com/2012/04/test-time/" rel="next">Test Time</a></span>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div id="theloop" class="copy fix">
+	<div class="copy-pad">
+<div class="fpost post-92 post type-post status-publish format-standard has-post-thumbnail hentry category-design" id="post-92">
+				
+				
+					
+						<div class="post-meta fix">	
+							
+							<div class="post-header fix post-nothumb" style="" >
+																<div class="post-title-section fix">
+
+									<div class="post-title fix">
+										
+										<h1 class="entry-title">NVRAM Programmer</h1>
+<div class="metabar"><em><span class="sword">By</span> <span class="author vcard"><span class="fn"><a href="http://8-bitspaghetti.com/author/spel3o/" title="Posts by Kyle" rel="author">Kyle</a></span></span> <span class="sword">On</span> <span class="date time published" title="2012-04-21T15:01:33+0000">April 21, 2012</span>  &middot; <span class="post-comments"><a href="http://8-bitspaghetti.com/2012/04/nvram-programmer/#comments">4 Comments</a></span>  </em></div>										
+									</div>
+
+
+								</div>
+															</div>				
+						</div>
+					
+					  	
+						<div class="entry_wrap fix">
+						
+							<div class="entry_content">
+								<p>For the control matrix of my computer I am using some NVRAM chips to store a 16-bit control word for the various registers and control wires of my CPU. I decided not to use EEPROM as the chips that I bought were all faulty and wouldn&#8217;t write (I consulted many people and they agreed). I also decided that moving breadboard wires around was an extremely inefficient way to program 70 control words at 70 addresses. Which is why I decided to create a simple NVRAM (or EEPROM) programmer using the Arduino to send out addresses and data as well as control the write enable pin. My sketch cycles through bytes of data in an array of a specified length. My code is <a href="http://pastebin.com/2msF8qK3" target="_blank">available</a> for anyone who would find it useful, it can be modified quite easily for your programming needs.</p>
+<p><div id="attachment_93" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01824.jpg"><img class="size-large wp-image-93" title="NVRAM Programmer" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01824-1024x768.jpg" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01824-1024x768.jpg 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01824-300x225.jpg 300w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01824.jpg 1280w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">The Wiring for My Programmer</p></div><br />
+<script src="http://pastebin.com/embed_js.php?i=2msF8qK3"></script></p>
+									<div class="clear"></div> 
+																</div>	
+							<div class="tags">
+								&nbsp;
+							</div>
+						</div>
+								</div>
+
+	<div class="clear"></div>
+	</div>
+</div>
+<div id="sharebar" class="copy fix">
+	<div class="copy-pad">
+			<div class="post-footer">
+
+					<div class="left">
+						If you enjoyed this article, please consider sharing it!	
+					</div>
+					<div class="right">
+																					<a href="http://reddit.com/submit?phase=2&amp;url=http://8-bitspaghetti.com/2012/04/nvram-programmer/&amp;title=NVRAM+Programmer" title="Share on Reddit" rel="nofollow" target="_blank"><img src="http://8-bitspaghetti.com/wp-content/themes/platform/images/ico-reddit.png" alt="Reddit" /></a>
+														
+															<a href="http://www.facebook.com/sharer.php?u=http://8-bitspaghetti.com/2012/04/nvram-programmer/&amp;t=NVRAM+Programmer" title="Share on Facebook" rel="nofollow" target="_blank"><img src="http://8-bitspaghetti.com/wp-content/themes/platform/images/ico-facebook.png" alt="Facebook" /></a>
+							 
+
+																							<a href="http://twitter.com/?status=NVRAM Programmer - http://8-bitspaghetti.com/2012/04/nvram-programmer/" title="Share on Twitter" rel="nofollow" target="_blank"><img src="http://8-bitspaghetti.com/wp-content/themes/platform/images/ico-twitter.png" alt="Twitter" /></a>
+							 
+
+															<a href="http://del.icio.us/post?url=http://8-bitspaghetti.com/2012/04/nvram-programmer/&amp;title=NVRAM+Programmer" title="Share on Delicious" rel="nofollow" target="_blank"><img src="http://8-bitspaghetti.com/wp-content/themes/platform/images/ico-del.png" alt="Delicious" /></a>
+														
+														
+														
+												</div>
+				<div class="clear"></div>
+			</div>
+	
+	<div class="clear"></div>
+	</div>
+</div>
+<div id="pl_comments" class="copy fix">
+	<div class="copy-pad">
+
+<div id="comments">
+				<h3 id="comments-title">4 Responses to <em>NVRAM Programmer</em></h3>
+
+			<ol class="commentlist">
+						<li class="pingback even thread-even depth-1" id="comment-27">
+				<div id="div-comment-27" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://www.adafruit.com/blog/2012/05/01/nvram-programmer/' rel='external nofollow' class='url'>NVRAM Programmer &laquo; adafruit industries blog</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/nvram-programmer/#comment-27">
+			May 1, 2012 at 12:03 pm</a>		</div>
+
+		<p>[&#8230;] NVRAM Programmer @ 8 Bit Spaghetti. Kyle writes &#8211;  For the control matrix of my computer I am using some NVRAM chips to store a 16-bit control word for the various registers and control wires of my CPU. I decided not to use EEPROM as the chips that I bought were all faulty and wouldn&rsquo;t write (I consulted many people and they agreed). I also decided that moving breadboard wires around was an extremely inefficient way to program 70 control words at 70 addresses. Which is why I decided to create a simple NVRAM (or EEPROM) programmer using the Arduino to send out addresses and data as well as control the write enable pin. My sketch cycles through bytes of data in an array of a specified length. My code is available for anyone who would find it useful, it can be modified quite easily for your programming needs. [&#8230;]</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/nvram-programmer/?replytocom=27#respond' onclick='return addComment.moveForm( "div-comment-27", "27", "respond", "92" )' aria-label='Reply to NVRAM Programmer &laquo; adafruit industries blog'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-52">
+				<div id="div-comment-52" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/d6e942d713353a8fdb47c606beaf08ba?s=45&#038;d=retro&#038;r=g' srcset='http://1.gravatar.com/avatar/d6e942d713353a8fdb47c606beaf08ba?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn">Getreal</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/nvram-programmer/#comment-52">
+			May 4, 2012 at 2:10 pm</a>		</div>
+
+		<p>Interesting project!  Where/how to get a schematic for this computer?</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/nvram-programmer/?replytocom=52#respond' onclick='return addComment.moveForm( "div-comment-52", "52", "respond", "92" )' aria-label='Reply to Getreal'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-spel3o bypostauthor even depth-2" id="comment-56">
+				<div id="div-comment-56" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://spel3o.com' rel='external nofollow' class='url'>Kyle</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/nvram-programmer/#comment-56">
+			May 5, 2012 at 4:29 am</a>		</div>
+
+		<p>I based the schematic for this computer off of the one provided in <i>Digital Computer Electronics</i> by Albert Malvino. I made some modifications to add functionality to the design. The block diagram for my design is on <a href-"http://www.instructables.com/id/How-to-Build-an-8-Bit-Computer/" rel="nofollow">Instructables</a>.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/nvram-programmer/?replytocom=56#respond' onclick='return addComment.moveForm( "div-comment-56", "56", "respond", "92" )' aria-label='Reply to Kyle'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-1020">
+				<div id="div-comment-1020" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/a41231c086c5b21294c0cdd1a8efc188?s=45&#038;d=retro&#038;r=g' srcset='http://1.gravatar.com/avatar/a41231c086c5b21294c0cdd1a8efc188?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn">Alex</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/nvram-programmer/#comment-1020">
+			February 16, 2015 at 1:59 am</a>		</div>
+
+		<p>Great job! I wonder what EEPROM chip you would recommend, can you give a jameco link? Thanks very much!</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/nvram-programmer/?replytocom=1020#respond' onclick='return addComment.moveForm( "div-comment-1020", "1020", "respond", "92" )' aria-label='Reply to Alex'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+			</ol>
+			
+			
+	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2012/04/nvram-programmer/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://8-bitspaghetti.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='92' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4b17d75e39" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="129"/></p>			</form>
+			</div><!-- #respond -->
+	</div>
+	<div class="clear"></div>
+	</div>
+</div>
+<div id="pagination" class="copy fix">
+	<div class="copy-pad">
+				
+		<div class="clear"></div>
+	</div>
+</div>
+			</div>
+		</div>
+		
+				
+	</div>	
+	
+	
+	<div id="sidebar-wrap" class="fix">
+			<div id="sidebar1" class="scolumn fix" >
+				<div class="scolumn-pad">
+					<div id="sidebar_primary" class="copy fix">
+	<div class="copy-pad">
+	<ul id="list_sidebar_primary" class="sidebar_widgets fix">
+		<li id="recent-comments-2" class="widget_recent_comments widget fix"><div class="widget-pad"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='http://spel3o.com' rel='external nofollow' class='url'>Kyle</a></span> on <a href="http://8-bitspaghetti.com/2012/04/two-useful-books/#comment-2799">Two Useful Books</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.kaizerpowerelectronics.dk' rel='external nofollow' class='url'>Mads Barnkob</a></span> on <a href="http://8-bitspaghetti.com/2012/05/building-8-bit-computer-instructions/#comment-1542">Building an 8-Bit Computer &#8211; Now With Instructions</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://david.carybros.com/' rel='external nofollow' class='url'>David Cary</a></span> on <a href="http://8-bitspaghetti.com/2012/04/two-useful-books/#comment-1344">Two Useful Books</a></li><li class="recentcomments"><span class="comment-author-link">Febin</span> on <a href="http://8-bitspaghetti.com/2012/04/display/#comment-1211">The Display</a></li><li class="recentcomments"><span class="comment-author-link">Alex</span> on <a href="http://8-bitspaghetti.com/2012/04/nvram-programmer/#comment-1020">NVRAM Programmer</a></li></ul></div></li><li id="archives-2" class="widget_archive widget fix"><div class="widget-pad"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href='http://8-bitspaghetti.com/2012/05/'>May 2012</a></li>
+	<li><a href='http://8-bitspaghetti.com/2012/04/'>April 2012</a></li>
+		</ul>
+		</div></li><li id="categories-2" class="widget_categories widget fix"><div class="widget-pad"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-1"><a href="http://8-bitspaghetti.com/category/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://8-bitspaghetti.com/category/the-build/" >The Build</a>
+</li>
+		</ul>
+</div></li><li id="text-2" class="widget_text widget fix"><div class="widget-pad"><h3 class="widget-title">Language</h3>			<div class="textwidget"><div id="google_translate_element"></div><script>
+			function googleTranslateElementInit() {
+  				new google.translate.TranslateElement({
+    				pageLanguage: 'en',
+    				layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  				}, 'google_translate_element');
+			}
+		</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>
+		</div></li>	</ul>
+	<div class="clear"></div>
+	</div>
+</div>
+	
+				</div>
+			</div>
+			</div>		
+
+</div>				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div> <!-- END #dynamic-content -->
+
+<div id="morefoot_area"><div id="morefoot" class="container fix">
+	<div class="texture">
+		<div class="content">
+			<div class="content-pad">
+								<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="clear"></div>
+				
+</div> <!-- END #page-main from header -->
+</div> <!-- END #page-canvas from header -->
+</div> <!-- END #page from header -->
+
+<div  id="footer">
+	<div class="outline fix"><div id="footcols" class="container fix">
+	<div class="texture">
+		<div class="content">
+			<div class="content-pad">
+			<div id="fcolumns_container" class="dcol_container_5 fix">
+				
+									<div class="dcol_5 dcol">
+						<div class="dcol-pad">
+															<h3 class="site-title">
+									<a class="home" href="http://8-bitspaghetti.com" title="Home">
+										8 Bit Spaghetti									</a>
+								</h3>
+													</div>
+					</div>
+					<div class="dcol_5 dcol">
+						<div class="dcol-pad">
+							<h3 class="widget-title">Pages</h3>
+								<div class="footer-links list-links"><ul>
+<li class="page_item page-item-52"><a href="http://8-bitspaghetti.com/about-me/">About Me</a></li>
+</ul></div>
+
+						</div>
+					</div>
+					<div class="dcol_5 dcol">
+						<div class="dcol-pad">
+							<h3 class="widget-title">The Latest</h3>
+								<ul class="latest_posts">
+																		<li class="list-item fix">
+											<div class="list_item_text">
+												<h5><a class="list_text_link" href="http://8-bitspaghetti.com/2012/05/building-8-bit-computer-instructions/"><span class="list-title">Building an 8-Bit Computer - Now With Instructions</span></a></h5>
+												<div class="list-excerpt">I have been thinking about doing an Instrucables article on my computer&nbsp;[&hellip;]</div>
+											</div>
+										</li>
+								</ul>
+						</div>
+					</div>
+					<div class="dcol_5 dcol">
+						<div class="dcol-pad">
+							<h3 class="widget-title">More</h3>
+							<div class="findent footer-more">
+								Thanks for dropping by! Feel free to join the discussion by leaving comments, and stay updated by subscribing to the <a href='http://8-bitspaghetti.com/feed/'>RSS feed</a>.							</div>
+						</div>
+					</div>
+					<div class="dcol_5 dcol">
+						<div class="dcol-pad">
+							<div class="findent terms">
+								© 2014 Kyle Hovey							</div>
+						</div>
+					</div>
+							</div>	
+			<div class="clear"></div>
+						<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cred" class="pagelines"><a class="plimage" target="_blank" href="http://www.pagelines.com/" title="PageLines"><img src="http://8-bitspaghetti.com/wp-content/themes/platform/images/pagelines.png" alt="Platform by PageLines" /></a></div><div class="clear"></div></div>
+</div>
+</div>
+<script type='text/javascript' src='http://8-bitspaghetti.com/wp-content/themes/platform/sections/nav/superfish.js?ver=1.0'></script>
+<script type='text/javascript' src='http://8-bitspaghetti.com/wp-content/themes/platform/sections/nav/jquery.bgiframe.min.js?ver=1.0'></script>
+<div id="su-footer-links" style="text-align: center;"></div><script type='text/javascript' src='http://8-bitspaghetti.com/wp-includes/js/comment-reply.min.js?ver=4.9.16'></script>
+<script type='text/javascript' src='http://8-bitspaghetti.com/wp-includes/js/wp-embed.min.js?ver=4.9.16'></script>
+<script async="async" type='text/javascript' src='http://8-bitspaghetti.com/wp-content/plugins/akismet/_inc/form.js?ver=4.0.3'></script>
+</body>
+</html>

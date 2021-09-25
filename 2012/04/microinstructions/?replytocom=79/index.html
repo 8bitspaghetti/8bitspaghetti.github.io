@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Microinstructions Done | 8 Bit Spaghetti</title>
+<!-- Platform WordPress Framework By PageLines - www.PageLines.com -->
+<link rel="shortcut icon" href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/favicon-pagelinescopy.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/apple-touch.png" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<!--[if lt IE 8]> <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script> <![endif]-->
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Microinstructions Done" />
+	<meta property="og:url" content="http://8-bitspaghetti.com/2012/04/microinstructions/" />
+	<meta property="og:image" content="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Scan-2.jpg" />
+	<meta property="article:published_time" content="2012-04-19" />
+	<meta property="article:modified_time" content="2012-04-19" />
+	<meta property="article:author" content="http://8-bitspaghetti.com/author/spel3o/" />
+	<meta property="article:section" content="Design" />
+	<meta property="og:site_name" content="8 Bit Spaghetti" />
+	<meta name="twitter:card" content="summary" />
+<!-- /SEO Ultimate -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="8 Bit Spaghetti &raquo; Feed" href="http://8-bitspaghetti.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="8 Bit Spaghetti &raquo; Comments Feed" href="http://8-bitspaghetti.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="8 Bit Spaghetti &raquo; Microinstructions Done Comments Feed" href="http://8-bitspaghetti.com/2012/04/microinstructions/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/8-bitspaghetti.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='pagelines-stylesheet-css'  href='http://8-bitspaghetti.com/wp-content/themes/platform/style.css?ver=144-021315213411' type='text/css' media='all' />
+<!--[if IE 7]>
+<link rel='stylesheet' id='ie7-style-css'  href='http://8-bitspaghetti.com/wp-content/themes/platform/css/ie7.css?ver=1.4.4' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://8-bitspaghetti.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://8-bitspaghetti.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://8-bitspaghetti.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://8-bitspaghetti.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://8-bitspaghetti.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='The Bulk of My Computer' href='http://8-bitspaghetti.com/2012/04/bulk-computer/' />
+<link rel='next' title='NVRAM Programmer' href='http://8-bitspaghetti.com/2012/04/nvram-programmer/' />
+<meta name="generator" content="WordPress 4.9.9" />
+<link rel="canonical" href="http://8-bitspaghetti.com/2012/04/microinstructions/" />
+<link rel='shortlink' href='http://8-bitspaghetti.com/?p=78' />
+<meta name='robots' content='noindex,follow' />
+<link rel="alternate" type="application/json+oembed" href="http://8-bitspaghetti.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2F8-bitspaghetti.com%2F2012%2F04%2Fmicroinstructions%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://8-bitspaghetti.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2F8-bitspaghetti.com%2F2012%2F04%2Fmicroinstructions%2F&#038;format=xml" />
+<link rel="stylesheet" id="dynamic-css" href="http://8-bitspaghetti.com/wp-content/themes/platform/css/dynamic.css?ver=144-021315213411" type="text/css" media="all" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+<body class="post-template-default single single-post postid-78 single-format-standard full_width ttype-single tmain-single">
+<div id="site" class="one-sidebar-right"> <!-- #site // Wraps #header, #page-main, #footer - closed in footer -->
+	<div id="page"> <!-- #page // Wraps #header, #page-main - closed in footer -->
+		<div id="page-canvas">
+						<div id="header" class="container-group fix">
+				<div class="outline">
+					<div id="branding" class="container fix">
+	<div class="texture">
+		<div class="content">
+			<div class="content-pad">
+<div class="branding_wrap">
+	<a class="mainlogo-link" href="http://8-bitspaghetti.com" title="8 Bit Spaghetti"><img class="mainlogo-img" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/banner.png" alt="8 Bit Spaghetti" /></a>		
+	
+	<div class="icons" style="bottom: 0px; right: px;">
+
+				<a target="_blank" href="http://8-bitspaghetti.com/feed/" class="rsslink"></a>
+		
+												<a target="_blank" href="http://facebook.com/192.168.kyle.hovey" class="facebooklink"></a>
+									<a target="_blank" href="http://www.linkedin.com/pub/kyle-hovey/50/193/6b8" class="linkedinlink"></a>
+									<a target="_blank" href="http://youtube.com/kenkwanaproductions" class="youtubelink"></a>
+							</div>
+</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="primary-nav" class="container fix">
+	<div class="texture">
+		<div class="content">
+			<div class="content-pad">
+	<div id="nav_row" class="main_nav fix">
+	
+	<ul id="menu-nav" class="main-nav">
+		<li class="page_item page-item-52"><a href="http://8-bitspaghetti.com/about-me/">About Me</a></li>
+	</ul><form method="get" class="searchform" action="http://8-bitspaghetti.com/" onsubmit="this.submit();return false;">
+	<fieldset>
+		<input type="text" value="Search" name="s" class="searchfield" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}" />
+
+		<input type="image" class="submit btn" name="submit" src="http://8-bitspaghetti.com/wp-content/themes/platform/images/search-btn.png" alt="Go" />
+	</fieldset>
+</form>
+	</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+				</div>
+			</div>
+						<div id="page-main" class="container-group fix"> <!-- #page-main // closed in footer -->
+				<div id="dynamic-content" class="outline fix">
+					<div id="maincontent" class="container fix">
+	<div class="texture">
+		<div class="content">
+			<div class="content-pad">
+<div id="pagelines_content" class="one-sidebar-right fix">
+	
+		<div id="column-wrap" class="fix">
+		
+				<div id="column-main" class="mcolumn fix">
+			<div class="mcolumn-pad" >
+				<div id="postnav" class="copy fix">
+	<div class="copy-pad">
+   			<div class="post-nav fix"> 
+			<span class="previous"><a href="http://8-bitspaghetti.com/2012/04/bulk-computer/" rel="prev">The Bulk of My Computer</a></span> 
+			<span class="next"><a href="http://8-bitspaghetti.com/2012/04/nvram-programmer/" rel="next">NVRAM Programmer</a></span>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div id="theloop" class="copy fix">
+	<div class="copy-pad">
+<div class="fpost post-78 post type-post status-publish format-standard has-post-thumbnail hentry category-design" id="post-78">
+				
+				
+					
+						<div class="post-meta fix">	
+							
+							<div class="post-header fix post-nothumb" style="" >
+																<div class="post-title-section fix">
+
+									<div class="post-title fix">
+										
+										<h1 class="entry-title">Microinstructions Done</h1>
+<div class="metabar"><em><span class="sword">By</span> <span class="author vcard"><span class="fn"><a href="http://8-bitspaghetti.com/author/spel3o/" title="Posts by Kyle" rel="author">Kyle</a></span></span> <span class="sword">On</span> <span class="date time published" title="2012-04-19T08:06:54+0000">April 19, 2012</span>  &middot; <span class="post-comments"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comments">24 Comments</a></span>  </em></div>										
+									</div>
+
+
+								</div>
+															</div>				
+						</div>
+					
+					  	
+						<div class="entry_wrap fix">
+						
+							<div class="entry_content">
+								<p>I finished the microinstructions for the control matrix of my computer. The block diagram on the upper left is the architecture of the computer itself. The chart below it is a list of OP codes for different macroinstructions. The chart on the right is the list of each individual microinstruction that makes up each macroinstruction.</p>
+<p>For sake of simplicity I&#8217;ve also put all of this data into an <a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Control_ROM.xlsx">excel worksheet</a> that reads out base-10 numbers to make programming the NVRAM easy if I choose to use my Arduino for a programmer.</p>
+<p><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Scan-2.jpg"><img class="alignnone size-large wp-image-45" title="Architecture and Microinstructions" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Scan-2-791x1024.jpg" alt="" width="595" height="770" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Scan-2-791x1024.jpg 791w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/Scan-2-231x300.jpg 231w" sizes="(max-width: 595px) 100vw, 595px" /></a></p>
+									<div class="clear"></div> 
+																</div>	
+							<div class="tags">
+								&nbsp;
+							</div>
+						</div>
+								</div>
+
+	<div class="clear"></div>
+	</div>
+</div>
+<div id="sharebar" class="copy fix">
+	<div class="copy-pad">
+			<div class="post-footer">
+
+					<div class="left">
+						If you enjoyed this article, please consider sharing it!	
+					</div>
+					<div class="right">
+																					<a href="http://reddit.com/submit?phase=2&amp;url=http://8-bitspaghetti.com/2012/04/microinstructions/&amp;title=Microinstructions+Done" title="Share on Reddit" rel="nofollow" target="_blank"><img src="http://8-bitspaghetti.com/wp-content/themes/platform/images/ico-reddit.png" alt="Reddit" /></a>
+														
+															<a href="http://www.facebook.com/sharer.php?u=http://8-bitspaghetti.com/2012/04/microinstructions/&amp;t=Microinstructions+Done" title="Share on Facebook" rel="nofollow" target="_blank"><img src="http://8-bitspaghetti.com/wp-content/themes/platform/images/ico-facebook.png" alt="Facebook" /></a>
+							 
+
+																							<a href="http://twitter.com/?status=Microinstructions Done - http://8-bitspaghetti.com/2012/04/microinstructions/" title="Share on Twitter" rel="nofollow" target="_blank"><img src="http://8-bitspaghetti.com/wp-content/themes/platform/images/ico-twitter.png" alt="Twitter" /></a>
+							 
+
+															<a href="http://del.icio.us/post?url=http://8-bitspaghetti.com/2012/04/microinstructions/&amp;title=Microinstructions+Done" title="Share on Delicious" rel="nofollow" target="_blank"><img src="http://8-bitspaghetti.com/wp-content/themes/platform/images/ico-del.png" alt="Delicious" /></a>
+														
+														
+														
+												</div>
+				<div class="clear"></div>
+			</div>
+	
+	<div class="clear"></div>
+	</div>
+</div>
+<div id="pl_comments" class="copy fix">
+	<div class="copy-pad">
+
+<div id="comments">
+				<h3 id="comments-title">24 Responses to <em>Microinstructions Done</em></h3>
+
+			<ol class="commentlist">
+						<li class="comment even thread-even depth-1" id="comment-5">
+				<div id="div-comment-5" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/1ef946ab13367c251fc8127179321059?s=45&#038;d=retro&#038;r=g' srcset='http://1.gravatar.com/avatar/1ef946ab13367c251fc8127179321059?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn">Alex</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-5">
+			April 24, 2012 at 1:12 am</a>		</div>
+
+		<p>Have you considered using an FPGA? The advantage there is you don&#8217;t need to spend money on chips, effort on wiring everything up, you have huge amounts of gates to work with and most importantly you can easily change the design as simply as changing a few lines of code without having to rewire your hardware.</p>
+<p>To top it all off, in your FPGA design environment you have access to hardware a simulator, think of it as a free multichannel logic analyser that will prove invaluable in troubleshooting.</p>
+<p>I imagine FPGAs can seem scary at first but speaking from personal experience, once you&#8217;ve gone there you&#8217;d never go back to discrete logic chips.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=5#respond' onclick='return addComment.moveForm( "div-comment-5", "5", "respond", "78" )' aria-label='Reply to Alex'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-spel3o bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-8">
+				<div id="div-comment-8" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://spel3o.com' rel='external nofollow' class='url'>Kyle</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-8">
+			April 24, 2012 at 1:23 am</a>		</div>
+
+		<p>Many people tried to convince me to use a FPGA when I started off with this project. I decided that it would not be nearly as fun or a challenge. I am not saying that I do not like them. In fact, I would love to have one to experiment with. Using discreet logic with actual IC&#8217;s is a lot more appealing to me, however, with this project. This way I can get a true understanding of how much work goes into the design and operation of a CPU.</p>
+<p>For instance, with an FPGA I would have not learned the imperative knowledge of TTL and CMOS voltage differences or gained the breadboard skills that I now have. And with a breadboard I have something truly physical to show for my work.</p>
+<p>I am into software as well so FPGA&#8217;s are implicitly intriguing to me. I might buy one in the future (perhaps after this project), but until then I&#8217;m perfectly content with throwing out my back to place breadboard wires.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=8#respond' onclick='return addComment.moveForm( "div-comment-8", "8", "respond", "78" )' aria-label='Reply to Kyle'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-12">
+				<div id="div-comment-12" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/c2c28662448b65b4bba8ec65352dde35?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/c2c28662448b65b4bba8ec65352dde35?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://www.saccade.com' rel='external nofollow' class='url'>J. Peterson</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-12">
+			April 24, 2012 at 3:57 am</a>		</div>
+
+		<p>You may want to consider writing a microcode assembler.  You could probably create something workable in two or three pages of Python.  In my <a href="http://www.saccade.com/writing/projects/CS428/WireWrap.html" rel="nofollow">own experience</a> creating a computer from scratch, it was a huge time saver.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=12#respond' onclick='return addComment.moveForm( "div-comment-12", "12", "respond", "78" )' aria-label='Reply to J. Peterson'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-13">
+				<div id="div-comment-13" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/e0d468fbbda9e039faeb040c49e52ef0?s=45&#038;d=retro&#038;r=g' srcset='http://2.gravatar.com/avatar/e0d468fbbda9e039faeb040c49e52ef0?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://www.traviscole.me' rel='external nofollow' class='url'>Travis Cole</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-13">
+			April 24, 2012 at 5:24 am</a>		</div>
+
+		<p>Just wanted to pass along some docs on an 8bit CPU that was designed by one of the professors at the University of Florida incase you need some well-documented reference material.</p>
+<p>Keep up the good work! It looks great and you will definitely learn a lot. </p>
+<p><a href="http://www.mil.ufl.edu/3701/labs/gcpu/gcpu_files.pdf" title="http://www.mil.ufl.edu/3701/labs/gcpu/gcpu_files.pdf" rel="nofollow"></a></p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=13#respond' onclick='return addComment.moveForm( "div-comment-13", "13", "respond", "78" )' aria-label='Reply to Travis Cole'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-2" id="comment-14">
+				<div id="div-comment-14" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/e0d468fbbda9e039faeb040c49e52ef0?s=45&#038;d=retro&#038;r=g' srcset='http://2.gravatar.com/avatar/e0d468fbbda9e039faeb040c49e52ef0?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://www.traviscole.me' rel='external nofollow' class='url'>Travis Cole</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-14">
+			April 24, 2012 at 5:24 am</a>		</div>
+
+		<p>HTML didn&#8217;t pull across:</p>
+<p><a href="http://www.mil.ufl.edu/3701/labs/gcpu/gcpu_files.pdf" rel="nofollow">http://www.mil.ufl.edu/3701/labs/gcpu/gcpu_files.pdf</a></p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=14#respond' onclick='return addComment.moveForm( "div-comment-14", "14", "respond", "78" )' aria-label='Reply to Travis Cole'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-15">
+				<div id="div-comment-15" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/2c6839624e1cb764456b03b848d16d92?s=45&#038;d=retro&#038;r=g' srcset='http://2.gravatar.com/avatar/2c6839624e1cb764456b03b848d16d92?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://techref.massmind.org/techref/logic/tutorial.htm' rel='external nofollow' class='url'>James Newton</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-15">
+			April 24, 2012 at 5:53 am</a>		</div>
+
+		<p>Really great project! I loved reading through this diagram. Couple of quick questions, if you don&#8217;t mind:</p>
+<p>Why are both /AO and /CO active in the second step of your STO instruction?</p>
+<p>Have you thought about adding a shift right and shift left operation to your ALU? Really easy to implement&#8230; just offset the wires in one direction or the other. Then you can write code to multiply and divide.</p>
+<p>Thanks for sharing this, it&#8217;s really nice to see someone getting into this stuff.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=15#respond' onclick='return addComment.moveForm( "div-comment-15", "15", "respond", "78" )' aria-label='Reply to James Newton'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-spel3o bypostauthor even thread-odd thread-alt depth-1" id="comment-16">
+				<div id="div-comment-16" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://spel3o.com' rel='external nofollow' class='url'>Kyle</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-16">
+			April 24, 2012 at 6:11 am</a>		</div>
+
+		<p>Are you referring to address 16? That is the second step of the STO op code as you pointed out. During that microinstruction the Accumulator outputs into RAM. In order for my 74189 64-bit RAM to write a byte it needs to have both its write and read pins low. So memory address 16 contains the control word to bring MI_, MO_ and AO_ low.</p>
+<p>It is funny that you would mention bit shifting. The other night I was wondering how multiplication was carried out in bitwise operations (I did not know how it officially worked). I concluded that bit shifting was the most efficient option, and it turned out the method that I thought of was already in use. Perhaps if I further this project once it is completed I can add more useful commands such as bit shifting or logical operations.</p>
+<p>Thank you, it has been a substantial learning experience for me.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=16#respond' onclick='return addComment.moveForm( "div-comment-16", "16", "respond", "78" )' aria-label='Reply to Kyle'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-29">
+				<div id="div-comment-29" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/9fd7424349068ba5b5062fc314e71ac5?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/9fd7424349068ba5b5062fc314e71ac5?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn">Luke Gilliam</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-29">
+			May 1, 2012 at 7:29 pm</a>		</div>
+
+		<p>this is great, really inspiring! and your project notes are works of art. great job!</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=29#respond' onclick='return addComment.moveForm( "div-comment-29", "29", "respond", "78" )' aria-label='Reply to Luke Gilliam'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-53">
+				<div id="div-comment-53" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/de597c7364cfb3ac4b25ba6c36b39d0a?s=45&#038;d=retro&#038;r=g' srcset='http://1.gravatar.com/avatar/de597c7364cfb3ac4b25ba6c36b39d0a?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://hightechsa.blogspot.com' rel='external nofollow' class='url'>Jurie Weidemann</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-53">
+			May 4, 2012 at 9:35 pm</a>		</div>
+
+		<p>Now there&#8217;s something I haven&#8217;t seen in a long time!  Used to enjoy building 555-timers and logic devices from similar &#8220;truth tables&#8221;!</p>
+<p>I really enjoy reading the blog about this project</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=53#respond' onclick='return addComment.moveForm( "div-comment-53", "53", "respond", "78" )' aria-label='Reply to Jurie Weidemann'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-66">
+				<div id="div-comment-66" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/1a77f84adec450b28e957608d574a933?s=45&#038;d=retro&#038;r=g' srcset='http://1.gravatar.com/avatar/1a77f84adec450b28e957608d574a933?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn">Mcgraw</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-66">
+			May 7, 2012 at 7:42 pm</a>		</div>
+
+		<p>I dont want to be rude or anything but a 4 bit address bus is less than useless. You cant do anything with a 4 bit address bus an 8 bit address bus maybe but for anything even semi-useful you need at least a 12 bit address bus. All popular 8 bit computers back in the day used a 16 bit address bus with one using a 14 bit one.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=66#respond' onclick='return addComment.moveForm( "div-comment-66", "66", "respond", "78" )' aria-label='Reply to Mcgraw'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-spel3o bypostauthor even depth-2 parent" id="comment-68">
+				<div id="div-comment-68" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://spel3o.com' rel='external nofollow' class='url'>Kyle</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-68">
+			May 8, 2012 at 1:54 am</a>		</div>
+
+		<p>I agree to an extent. The four bit address architecture is the one described in <i>Digital Computer Electronics</i>. I began my design based on the SAP-1 included in that book and therefore it ended up having a 4-bit address line. Having only 16 memory locations is very limiting, but it still is a start. If I were to do the project over again I would most certainly increase the address bit width.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=68#respond' onclick='return addComment.moveForm( "div-comment-68", "68", "respond", "78" )' aria-label='Reply to Kyle'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-3 parent" id="comment-71">
+				<div id="div-comment-71" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/1a77f84adec450b28e957608d574a933?s=45&#038;d=retro&#038;r=g' srcset='http://1.gravatar.com/avatar/1a77f84adec450b28e957608d574a933?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn">Mcgraw</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-71">
+			May 8, 2012 at 4:31 pm</a>		</div>
+
+		<p>Why not for your second project build a z80 computer? Jameco.com is an excellent parts source and has very cheap drams and srams the z80 even has dram refresh built in if you choose to use dynamic rams. The z80 is an excellent microprocessor and it only costs $2 and drams are 99 cents apeice with srams being $2 &#8211; $4s.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=71#respond' onclick='return addComment.moveForm( "div-comment-71", "71", "respond", "78" )' aria-label='Reply to Mcgraw'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-spel3o bypostauthor even depth-4" id="comment-80">
+				<div id="div-comment-80" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://spel3o.com' rel='external nofollow' class='url'>Kyle</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-80">
+			May 13, 2012 at 4:22 pm</a>		</div>
+
+		<p>I have thought about that a lot. I bought a Z80 processor from them a while back as they were so inexpensive. If I ever were to delve into such a project, I now have the part.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=80#respond' onclick='return addComment.moveForm( "div-comment-80", "80", "respond", "78" )' aria-label='Reply to Kyle'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt depth-2" id="comment-123">
+				<div id="div-comment-123" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/f080682d938e1d2b02f2b094d5e75e7c?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/f080682d938e1d2b02f2b094d5e75e7c?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://www.manuelneuer.net' rel='external nofollow' class='url'>Manuel Neuer</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-123">
+			July 5, 2012 at 2:48 pm</a>		</div>
+
+		<p>Very nice, orry for all of the questions, I’ve just started designing my own homebrew CPU partly based on your design and I’m trying to work out if there are any obvious things I’ve missed, so “Because I want to” is just as helpful an answer as something more technical</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=123#respond' onclick='return addComment.moveForm( "div-comment-123", "123", "respond", "78" )' aria-label='Reply to Manuel Neuer'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-76">
+				<div id="div-comment-76" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/656b03fedb2fa99f80cbf5a88445d4f3?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/656b03fedb2fa99f80cbf5a88445d4f3?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn">Chris</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-76">
+			May 13, 2012 at 2:14 am</a>		</div>
+
+		<p>Why does it require 3 microinstructions to do the instruction fetch? If the program counter increment is just a counter then can it not be done at the same time as the opcode being read back from the memory to the IR? Or is it that way because of the time taken for the opcode to appear from the ROM?</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=76#respond' onclick='return addComment.moveForm( "div-comment-76", "76", "respond", "78" )' aria-label='Reply to Chris'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-spel3o bypostauthor odd alt depth-2 parent" id="comment-77">
+				<div id="div-comment-77" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://spel3o.com' rel='external nofollow' class='url'>Kyle</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-77">
+			May 13, 2012 at 5:32 am</a>		</div>
+
+		<p>You are correct. The increment state could take place during the memory state, but because of each OP taking three T states to operate it is acceptable to separate the processes into three cycles. It is efficient to include a variable machine cycle in which the computer clears the ring counter if a NOP (no operation) condition is present. If you were to combine the increment in memory state this would of course save one T cycle in this case</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=77#respond' onclick='return addComment.moveForm( "div-comment-77", "77", "respond", "78" )' aria-label='Reply to Kyle'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-3 parent" id="comment-78">
+				<div id="div-comment-78" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/656b03fedb2fa99f80cbf5a88445d4f3?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/656b03fedb2fa99f80cbf5a88445d4f3?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn">Chris</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-78">
+			May 13, 2012 at 11:21 am</a>		</div>
+
+		<p>Is there a particular reason for wanting each op to take three T-states? As the fetch T-states are executed for every instruction, it effectively makes every op take 6 T-states, so reducing the Fetch to 2 T-states would reduce runtime by 16%. I guess you would want to burn off some more clock cycles for a NOP (for example if you are waiting for something to happen) because you would need three times as many NOP instructions in memory to get a 6-clock delay &#8211; I&#8217;m wondering if there is something else I&#8217;ve overlooked.</p>
+<p>Sorry for all of the questions, I&#8217;ve just started designing my own homebrew CPU partly based on your design and I&#8217;m trying to work out if there are any obvious things I&#8217;ve missed, so &#8220;Because I want to&#8221; is just as helpful an answer as something more technical 🙂</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=78#respond' onclick='return addComment.moveForm( "div-comment-78", "78", "respond", "78" )' aria-label='Reply to Chris'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-spel3o bypostauthor odd alt depth-4" id="comment-79">
+				<div id="div-comment-79" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://spel3o.com' rel='external nofollow' class='url'>Kyle</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-79">
+			May 13, 2012 at 4:20 pm</a>		</div>
+
+		<p>It&#8217;s fine, ask as many questions as you like. What you are describing is what I was talking about in my previous comment. A variable machine cycle is when the control matrix detects when a NOP control word is present (by using an AND or NAND gate) and clears the ring counter so that the next instruction cycle can begin. I wish you luck with your project.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=79#respond' onclick='return addComment.moveForm( "div-comment-79", "79", "respond", "78" )' aria-label='Reply to Kyle'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-127">
+				<div id="div-comment-127" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/206cdebad201b1c778547b89ce4c0543?s=45&#038;d=retro&#038;r=g' srcset='http://2.gravatar.com/avatar/206cdebad201b1c778547b89ce4c0543?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://www.agneepath.net' rel='external nofollow' class='url'>Agneepath</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-127">
+			July 6, 2012 at 9:03 pm</a>		</div>
+
+		<p>This is very good amazing!</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=127#respond' onclick='return addComment.moveForm( "div-comment-127", "127", "respond", "78" )' aria-label='Reply to Agneepath'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="trackback odd alt thread-odd thread-alt depth-1" id="comment-140">
+				<div id="div-comment-140" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://fsgb80v7cdbwe.com/' rel='external nofollow' class='url'>fsgb80v7cbwe</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-140">
+			January 8, 2013 at 12:56 am</a>		</div>
+
+		<p><strong>Websites we think you should visit&#8230;</strong></p>
+<p>we like to honor many other internet sites on the web, even if they aren’t linked to us, by linking to them. Under are some webpages worth checking out&#8230;</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=140#respond' onclick='return addComment.moveForm( "div-comment-140", "140", "respond", "78" )' aria-label='Reply to fsgb80v7cbwe'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-146">
+				<div id="div-comment-146" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/2f32bffcc3f1bee52a19f4b29ce434a3?s=45&#038;d=retro&#038;r=g' srcset='http://2.gravatar.com/avatar/2f32bffcc3f1bee52a19f4b29ce434a3?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn">Cody</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-146">
+			March 2, 2013 at 4:51 am</a>		</div>
+
+		<p>You said you used three rom chips, but there were only two in the diagram.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=146#respond' onclick='return addComment.moveForm( "div-comment-146", "146", "respond", "78" )' aria-label='Reply to Cody'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-spel3o bypostauthor odd alt depth-2" id="comment-147">
+				<div id="div-comment-147" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=45&#038;d=retro&#038;r=g' srcset='http://0.gravatar.com/avatar/35db22d2a51143e2241dcbf5a545fcaa?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn"><a href='http://spel3o.com' rel='external nofollow' class='url'>Kyle</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-147">
+			March 2, 2013 at 5:04 am</a>		</div>
+
+		<p>There are two blocks in the diagram, one for the instruction and one for the control word. The control word is 16 bits long and requires two 8-bit ROM chips. (I am assuming that you are talking about <a href="http://www.instructables.com/files/deriv/FS7/AL85/H1QMLAYO/FS7AL85H1QMLAYO.MEDIUM.jpg" rel="nofollow">this diagram</a>).</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=147#respond' onclick='return addComment.moveForm( "div-comment-147", "147", "respond", "78" )' aria-label='Reply to Kyle'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-148">
+				<div id="div-comment-148" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/2f32bffcc3f1bee52a19f4b29ce434a3?s=45&#038;d=retro&#038;r=g' srcset='http://2.gravatar.com/avatar/2f32bffcc3f1bee52a19f4b29ce434a3?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn">Cody</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-148">
+			March 8, 2013 at 10:08 pm</a>		</div>
+
+		<p>How would you add the compare command to your computer.</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=148#respond' onclick='return addComment.moveForm( "div-comment-148", "148", "respond", "78" )' aria-label='Reply to Cody'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-156">
+				<div id="div-comment-156" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/2f32bffcc3f1bee52a19f4b29ce434a3?s=45&#038;d=retro&#038;r=g' srcset='http://2.gravatar.com/avatar/2f32bffcc3f1bee52a19f4b29ce434a3?s=90&#038;d=retro&#038;r=g 2x' class='avatar avatar-45 photo' height='45' width='45' />			<cite class="fn">Cody</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://8-bitspaghetti.com/2012/04/microinstructions/#comment-156">
+			April 2, 2013 at 12:25 am</a>		</div>
+
+		<p>Why do the ram control bits need to be inverted?</p>
+
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://8-bitspaghetti.com/2012/04/microinstructions/?replytocom=156#respond' onclick='return addComment.moveForm( "div-comment-156", "156", "respond", "78" )' aria-label='Reply to Cody'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+			</ol>
+			
+			
+	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply to <a href="#comment-79">Kyle</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2012/04/microinstructions/#respond">Cancel reply</a></small></h3>			<form action="http://8-bitspaghetti.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='78' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='79' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="c2a9ae81f5" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="104"/></p>			</form>
+			</div><!-- #respond -->
+	</div>
+	<div class="clear"></div>
+	</div>
+</div>
+<div id="pagination" class="copy fix">
+	<div class="copy-pad">
+				
+		<div class="clear"></div>
+	</div>
+</div>
+			</div>
+		</div>
+		
+				
+	</div>	
+	
+	
+	<div id="sidebar-wrap" class="fix">
+			<div id="sidebar1" class="scolumn fix" >
+				<div class="scolumn-pad">
+					<div id="sidebar_primary" class="copy fix">
+	<div class="copy-pad">
+	<ul id="list_sidebar_primary" class="sidebar_widgets fix">
+		<li id="recent-comments-2" class="widget_recent_comments widget fix"><div class="widget-pad"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='http://spel3o.com' rel='external nofollow' class='url'>Kyle</a></span> on <a href="http://8-bitspaghetti.com/2012/04/two-useful-books/#comment-2799">Two Useful Books</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.kaizerpowerelectronics.dk' rel='external nofollow' class='url'>Mads Barnkob</a></span> on <a href="http://8-bitspaghetti.com/2012/05/building-8-bit-computer-instructions/#comment-1542">Building an 8-Bit Computer &#8211; Now With Instructions</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://david.carybros.com/' rel='external nofollow' class='url'>David Cary</a></span> on <a href="http://8-bitspaghetti.com/2012/04/two-useful-books/#comment-1344">Two Useful Books</a></li><li class="recentcomments"><span class="comment-author-link">Febin</span> on <a href="http://8-bitspaghetti.com/2012/04/display/#comment-1211">The Display</a></li><li class="recentcomments"><span class="comment-author-link">Alex</span> on <a href="http://8-bitspaghetti.com/2012/04/nvram-programmer/#comment-1020">NVRAM Programmer</a></li></ul></div></li><li id="archives-2" class="widget_archive widget fix"><div class="widget-pad"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href='http://8-bitspaghetti.com/2012/05/'>May 2012</a></li>
+	<li><a href='http://8-bitspaghetti.com/2012/04/'>April 2012</a></li>
+		</ul>
+		</div></li><li id="categories-2" class="widget_categories widget fix"><div class="widget-pad"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-1"><a href="http://8-bitspaghetti.com/category/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://8-bitspaghetti.com/category/the-build/" >The Build</a>
+</li>
+		</ul>
+</div></li><li id="text-2" class="widget_text widget fix"><div class="widget-pad"><h3 class="widget-title">Language</h3>			<div class="textwidget"><div id="google_translate_element"></div><script>
+			function googleTranslateElementInit() {
+  				new google.translate.TranslateElement({
+    				pageLanguage: 'en',
+    				layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  				}, 'google_translate_element');
+			}
+		</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>
+		</div></li>	</ul>
+	<div class="clear"></div>
+	</div>
+</div>
+	
+				</div>
+			</div>
+			</div>		
+
+</div>				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div> <!-- END #dynamic-content -->
+
+<div id="morefoot_area"><div id="morefoot" class="container fix">
+	<div class="texture">
+		<div class="content">
+			<div class="content-pad">
+								<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="clear"></div>
+				
+</div> <!-- END #page-main from header -->
+</div> <!-- END #page-canvas from header -->
+</div> <!-- END #page from header -->
+
+<div  id="footer">
+	<div class="outline fix"><div id="footcols" class="container fix">
+	<div class="texture">
+		<div class="content">
+			<div class="content-pad">
+			<div id="fcolumns_container" class="dcol_container_5 fix">
+				
+									<div class="dcol_5 dcol">
+						<div class="dcol-pad">
+															<h3 class="site-title">
+									<a class="home" href="http://8-bitspaghetti.com" title="Home">
+										8 Bit Spaghetti									</a>
+								</h3>
+													</div>
+					</div>
+					<div class="dcol_5 dcol">
+						<div class="dcol-pad">
+							<h3 class="widget-title">Pages</h3>
+								<div class="footer-links list-links"><ul>
+<li class="page_item page-item-52"><a href="http://8-bitspaghetti.com/about-me/">About Me</a></li>
+</ul></div>
+
+						</div>
+					</div>
+					<div class="dcol_5 dcol">
+						<div class="dcol-pad">
+							<h3 class="widget-title">The Latest</h3>
+								<ul class="latest_posts">
+																		<li class="list-item fix">
+											<div class="list_item_text">
+												<h5><a class="list_text_link" href="http://8-bitspaghetti.com/2012/05/building-8-bit-computer-instructions/"><span class="list-title">Building an 8-Bit Computer - Now With Instructions</span></a></h5>
+												<div class="list-excerpt">I have been thinking about doing an Instrucables article on my computer&nbsp;[&hellip;]</div>
+											</div>
+										</li>
+								</ul>
+						</div>
+					</div>
+					<div class="dcol_5 dcol">
+						<div class="dcol-pad">
+							<h3 class="widget-title">More</h3>
+							<div class="findent footer-more">
+								Thanks for dropping by! Feel free to join the discussion by leaving comments, and stay updated by subscribing to the <a href='http://8-bitspaghetti.com/feed/'>RSS feed</a>.							</div>
+						</div>
+					</div>
+					<div class="dcol_5 dcol">
+						<div class="dcol-pad">
+							<div class="findent terms">
+								© 2014 Kyle Hovey							</div>
+						</div>
+					</div>
+							</div>	
+			<div class="clear"></div>
+						<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cred" class="pagelines"><a class="plimage" target="_blank" href="http://www.pagelines.com/" title="PageLines"><img src="http://8-bitspaghetti.com/wp-content/themes/platform/images/pagelines.png" alt="Platform by PageLines" /></a></div><div class="clear"></div></div>
+</div>
+</div>
+<script type='text/javascript' src='http://8-bitspaghetti.com/wp-content/themes/platform/sections/nav/superfish.js?ver=1.0'></script>
+<script type='text/javascript' src='http://8-bitspaghetti.com/wp-content/themes/platform/sections/nav/jquery.bgiframe.min.js?ver=1.0'></script>
+<div id="su-footer-links" style="text-align: center;"></div><script type='text/javascript' src='http://8-bitspaghetti.com/wp-includes/js/comment-reply.min.js?ver=4.9.9'></script>
+<script type='text/javascript' src='http://8-bitspaghetti.com/wp-includes/js/wp-embed.min.js?ver=4.9.9'></script>
+<script async="async" type='text/javascript' src='http://8-bitspaghetti.com/wp-content/plugins/akismet/_inc/form.js?ver=4.0.3'></script>
+</body>
+</html>

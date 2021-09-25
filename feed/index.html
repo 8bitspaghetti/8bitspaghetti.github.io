@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>8 Bit Spaghetti</title>
+	<atom:link href="http://8-bitspaghetti.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://8-bitspaghetti.com</link>
+	<description></description>
+	<lastBuildDate>Thu, 28 Mar 2013 07:58:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.13</generator>
+	<item>
+		<title>Building an 8-Bit Computer &#8211; Now With Instructions</title>
+		<link>http://8-bitspaghetti.com/2012/05/building-8-bit-computer-instructions/</link>
+		<comments>http://8-bitspaghetti.com/2012/05/building-8-bit-computer-instructions/#comments</comments>
+		<pubDate>Fri, 04 May 2012 06:30:22 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+
+		<guid isPermaLink="false">http://8-bitspaghetti.com/?p=112</guid>
+		<description><![CDATA[<p>I have been thinking about doing an Instrucables article on my computer project for a while now as the goal of this project being on the internet in the first place is to help people with a similar goal. For those of you who are not familiar with Instructables, it is a comprehensive DIY website written by makers from [...]]]></description>
+				<content:encoded><![CDATA[<p>I have been thinking about doing an Instrucables article on my computer project for a while now as the goal of this project being on the internet in the first place is to help people with a similar goal. For those of you who are not familiar with Instructables, it is a comprehensive DIY website written by makers from all corners of life. All it takes to write a how-to article is to register for an account and share what you do. I finally got around to writing my article on <a href="http://www.instructables.com/id/How-to-Build-an-8-Bit-Computer/">how to build an 8-bit computer from scratch</a>. It took me three days due to the increased workload as my school year comes to an end, but I finally completed what I hope to be an easy to understand article on how to go about building your own computer from TTL logic.</p>
+<div id="attachment_113" style="width: 124px" class="wp-caption alignnone"><a href="http://www.instructables.com/id/How-to-Build-an-8-Bit-Computer/"><img class="size-full wp-image-113" title="" src="http://8-bitspaghetti.com/wp-content/uploads/2012/05/apple-touch.png" alt="" width="114" height="114" /></a><p class="wp-caption-text">Instructables - How to Build An 8-Bit Computer</p></div>
+]]></content:encoded>
+			<wfw:commentRss>http://8-bitspaghetti.com/2012/05/building-8-bit-computer-instructions/feed/</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+		<item>
+		<title>Test Time</title>
+		<link>http://8-bitspaghetti.com/2012/04/test-time/</link>
+		<comments>http://8-bitspaghetti.com/2012/04/test-time/#comments</comments>
+		<pubDate>Thu, 26 Apr 2012 04:23:15 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle]]></dc:creator>
+				<category><![CDATA[The Build]]></category>
+
+		<guid isPermaLink="false">http://8-bitspaghetti.com/?p=106</guid>
+		<description><![CDATA[<p>I just finished wiring up the NVRAM chips to the computer. They are being addressed by a 8-bit program counter separate from the computer&#8217;s control counter. The control matrix changes its control word on the falling edge of the clock pulse. This allows the control to set up the 16-bit word, needed to tell which [...]]]></description>
+				<content:encoded><![CDATA[<p>I just finished wiring up the NVRAM chips to the computer. They are being addressed by a 8-bit program counter separate from the computer&#8217;s control counter. The control matrix changes its control word on the falling edge of the clock pulse. This allows the control to set up the 16-bit word, needed to tell which registers or operations are to be active, for the rising clock pulse.</p>
+<p>There are a few problems, however, that have made this a bit more difficult than it should be. Since the NVRAM chips I am using are CMOS driven, the TTL chips do not always provide the correct voltage to address the NVRAM chips correctly. Inversely, the NVRAM chips also have the tenancy to output incompatible voltages in regards to TTL. To remedy this I am using the last of my 8-bit three state buffers to convert the input and output of the chips to higher voltages. After I get the NVRAM chips functioning correctly, I only have to add the input and write/run logic as well as the output and the computer is finished (circuit-wise). I will be designing a steampunk-themed case for the enclosure. The case will be the final step before this project is complete.</p>
+<div id="attachment_107" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Almost.jpg"><img class="size-large wp-image-107" title="Coming Along" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Almost-1024x768.jpg" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Almost-1024x768.jpg 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/Almost-300x225.jpg 300w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">And Let the Testing Begin.</p></div>
+]]></content:encoded>
+			<wfw:commentRss>http://8-bitspaghetti.com/2012/04/test-time/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+		<item>
+		<title>NVRAM Programmer</title>
+		<link>http://8-bitspaghetti.com/2012/04/nvram-programmer/</link>
+		<comments>http://8-bitspaghetti.com/2012/04/nvram-programmer/#comments</comments>
+		<pubDate>Sat, 21 Apr 2012 15:01:33 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+
+		<guid isPermaLink="false">http://8-bitspaghetti.com/?p=92</guid>
+		<description><![CDATA[<p>For the control matrix of my computer I am using some NVRAM chips to store a 16-bit control word for the various registers and control wires of my CPU. I decided not to use EEPROM as the chips that I bought were all faulty and wouldn&#8217;t write (I consulted many people and they agreed). I [...]]]></description>
+				<content:encoded><![CDATA[<p>For the control matrix of my computer I am using some NVRAM chips to store a 16-bit control word for the various registers and control wires of my CPU. I decided not to use EEPROM as the chips that I bought were all faulty and wouldn&#8217;t write (I consulted many people and they agreed). I also decided that moving breadboard wires around was an extremely inefficient way to program 70 control words at 70 addresses. Which is why I decided to create a simple NVRAM (or EEPROM) programmer using the Arduino to send out addresses and data as well as control the write enable pin. My sketch cycles through bytes of data in an array of a specified length. My code is <a href="http://pastebin.com/2msF8qK3" target="_blank">available</a> for anyone who would find it useful, it can be modified quite easily for your programming needs.</p>
+<p><div id="attachment_93" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01824.jpg"><img class="size-large wp-image-93" title="NVRAM Programmer" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01824-1024x768.jpg" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01824-1024x768.jpg 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01824-300x225.jpg 300w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01824.jpg 1280w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">The Wiring for My Programmer</p></div><br />
+<script src="http://pastebin.com/embed_js.php?i=2msF8qK3"></script></p>
+]]></content:encoded>
+			<wfw:commentRss>http://8-bitspaghetti.com/2012/04/nvram-programmer/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Microinstructions Done</title>
+		<link>http://8-bitspaghetti.com/2012/04/microinstructions/</link>
+		<comments>http://8-bitspaghetti.com/2012/04/microinstructions/#comments</comments>
+		<pubDate>Thu, 19 Apr 2012 08:06:54 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+
+		<guid isPermaLink="false">http://8-bitspaghetti.com/?p=78</guid>
+		<description><![CDATA[<p>I finished the microinstructions for the control matrix of my computer. The block diagram on the upper left is the architecture of the computer itself. The chart below it is a list of OP codes for different macroinstructions. The chart on the right is the list of each individual microinstruction that makes up each macroinstruction.</p> [...]]]></description>
+				<content:encoded><![CDATA[<p>I finished the microinstructions for the control matrix of my computer. The block diagram on the upper left is the architecture of the computer itself. The chart below it is a list of OP codes for different macroinstructions. The chart on the right is the list of each individual microinstruction that makes up each macroinstruction.</p>
+<p>For sake of simplicity I&#8217;ve also put all of this data into an <a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Control_ROM.xlsx">excel worksheet</a> that reads out base-10 numbers to make programming the NVRAM easy if I choose to use my Arduino for a programmer.</p>
+<p><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Scan-2.jpg"><img class="alignnone size-large wp-image-45" title="Architecture and Microinstructions" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Scan-2-791x1024.jpg" alt="" width="595" height="770" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Scan-2-791x1024.jpg 791w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/Scan-2-231x300.jpg 231w" sizes="(max-width: 595px) 100vw, 595px" /></a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://8-bitspaghetti.com/2012/04/microinstructions/feed/</wfw:commentRss>
+		<slash:comments>24</slash:comments>
+		</item>
+		<item>
+		<title>The Bulk of My Computer</title>
+		<link>http://8-bitspaghetti.com/2012/04/bulk-computer/</link>
+		<comments>http://8-bitspaghetti.com/2012/04/bulk-computer/#comments</comments>
+		<pubDate>Thu, 19 Apr 2012 07:59:46 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+
+		<guid isPermaLink="false">http://8-bitspaghetti.com/?p=74</guid>
+		<description><![CDATA[<p>After a month I finally received my breadboards from China and can start finishing the breadboard work on my computer. I now have all of the registers constructed as well as the ALU. Everything is connected to a data bus (bottom) that allows for the transfer of data from one register on the computer to [...]]]></description>
+				<content:encoded><![CDATA[<p>After a month I finally received my breadboards from China and can start finishing the breadboard work on my computer. I now have all of the registers constructed as well as the ALU. Everything is connected to a data bus (bottom) that allows for the transfer of data from one register on the computer to another. All that remains now is the control matrix as well as the logic that drives the operation of the computer (run/stop, manual clock, auto, etc&#8230;). All of the yellow wires are control bits for the registers.</p>
+<div id="attachment_42" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01803.jpg"><img class="size-large wp-image-42" title="The Bulk of My Computer" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01803-1024x768.jpg" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01803-1024x768.jpg 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01803-300x225.jpg 300w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">The Bulk of My Computer</p></div>
+]]></content:encoded>
+			<wfw:commentRss>http://8-bitspaghetti.com/2012/04/bulk-computer/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Control Matrix Programming</title>
+		<link>http://8-bitspaghetti.com/2012/04/control-matrix-programming/</link>
+		<comments>http://8-bitspaghetti.com/2012/04/control-matrix-programming/#comments</comments>
+		<pubDate>Thu, 19 Apr 2012 07:53:16 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+
+		<guid isPermaLink="false">http://8-bitspaghetti.com/?p=72</guid>
+		<description><![CDATA[<p>A CPU consists mainly of registers (places to store values) that have to be controlled by, you guessed it, a control matrix. The control matrix outputs a control word, CON, whose bits activate the needed registers on a computer for input and output. For my computer I am using 3 NVRAM chips to store all [...]]]></description>
+				<content:encoded><![CDATA[<p>A CPU consists mainly of registers (places to store values) that have to be controlled by, you guessed it, a control matrix. The control matrix outputs a control word, CON, whose bits activate the needed registers on a computer for input and output. For my computer I am using 3 NVRAM chips to store all of the control words.</p>
+<p>The control matrix on my computer has two stages, both of wich consist of 3 steps. The entire sequence is called the machine cycle. And, in my computer&#8217;s case, the machine cycle also is equivalent to the instruction cycle which is how long it takes for an instruction to be carried out. The control logic is driven by a ring counter which activates 6 outputs one at a time with each clock pulse. On the first high bit of the ring counter an 8-bit counter that addresses the control ROM is cleared. On the third high bit of the ring counter an address is loaded into the counter from an 8-bit ROM that is addressed by a 4-bit OP code that tells the counter where the instruction steps are held inside of the ROM. I built a rudimentary programmer that takes breadboard wires moved to either positive voltage or ground as input.</p>
+<div id="attachment_43" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01805.jpg"><img class="size-large wp-image-43" title="My Programmer" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01805-1024x768.jpg" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01805-1024x768.jpg 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01805-300x225.jpg 300w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">My Programmer</p></div>
+]]></content:encoded>
+			<wfw:commentRss>http://8-bitspaghetti.com/2012/04/control-matrix-programming/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>The Display</title>
+		<link>http://8-bitspaghetti.com/2012/04/display/</link>
+		<comments>http://8-bitspaghetti.com/2012/04/display/#comments</comments>
+		<pubDate>Thu, 19 Apr 2012 07:41:18 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[The Build]]></category>
+
+		<guid isPermaLink="false">http://8-bitspaghetti.com/?p=68</guid>
+		<description><![CDATA[<p>For the display I wanted something more interesting than a simple binary readout. I decided to go with the retro look and use some IV-9 russian Numitron tubes that can be conveniently driven by 5V with 20mA of current, the perfect amount to use a 4511 7-segment decoder. The only problem in the way of [...]]]></description>
+				<content:encoded><![CDATA[<p>For the display I wanted something more interesting than a simple binary readout. I decided to go with the retro look and use some IV-9 russian Numitron tubes that can be conveniently driven by 5V with 20mA of current, the perfect amount to use a 4511 7-segment decoder. The only problem in the way of a steampunk output for my computer was converting the base-16 output of my computer into 3 digits of base-10 binary coded decimals.</p>
+<p>Binary coded decimals are exactly what they sound like. The BCD system uses binary values 0-9 to express the base-10 digits that we use every day. For instance, the binary number 132 (10000100) would be 0001-0011-0010 expressed in binary coded decimal. To convert binary to BCD you can either design an incredibly complicated logic circuit to preform the operation, use a read-only memory (ROM) to output the correct values or use the method I chose of using an Arduino to do the conversion.</p>
+<p>My friend and I created an <a href="http://pastebin.com/qhMNm8ns" target="_blank">Arduino sketch</a> that takes an 8-bit input (0-255) and outputs 3 BCD digits. The output goes to a 3-digit Numitron readout board that I spent a good amount of time on.</p>
+<p><div id="attachment_29" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01810.png"><img class="size-large wp-image-29" title="3 Digit Numitron Readout" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01810-1024x768.png" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01810-1024x768.png 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01810-300x225.png 300w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01810.png 1280w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">3 Digit Numitron Readout</p></div><br />
+<script src="http://pastebin.com/embed_js.php?i=qhMNm8ns"></script></p>
+]]></content:encoded>
+			<wfw:commentRss>http://8-bitspaghetti.com/2012/04/display/feed/</wfw:commentRss>
+		<slash:comments>17</slash:comments>
+		</item>
+		<item>
+		<title>Two Useful Books</title>
+		<link>http://8-bitspaghetti.com/2012/04/two-useful-books/</link>
+		<comments>http://8-bitspaghetti.com/2012/04/two-useful-books/#comments</comments>
+		<pubDate>Thu, 19 Apr 2012 07:25:50 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+
+		<guid isPermaLink="false">http://8-bitspaghetti.com/?p=65</guid>
+		<description><![CDATA[<p>Without the textbook <a href="http://www.amazon.com/Digital-Computer-Electronics-Albert-Malvino/dp/0028005945">Digital Computer Electronics</a> by Albert Malvino I wouldn&#8217;t have been able to even start this project. If you are considering building, or even learning about a computer using TTL this book is extremely worth the small amount of money you have to pay for it on Amazon. The <a href="http://www.amazon.com/TTL-Cookbook-Donald-E-Lancaster/dp/0672210355/ref=sr_1_1?s=books&#38;ie=UTF8&#38;qid=1334820244&#38;sr=1-1">TTL Cookbook</a> by [...]]]></description>
+				<content:encoded><![CDATA[<p>Without the textbook <span style="text-decoration: underline;"><a href="http://www.amazon.com/Digital-Computer-Electronics-Albert-Malvino/dp/0028005945">Digital Computer Electronics</a></span> by Albert Malvino I wouldn&#8217;t have been able to even start this project. If you are considering building, or even learning about a computer using TTL this book is extremely worth the small amount of money you have to pay for it on Amazon. The <span style="text-decoration: underline;"><a href="http://www.amazon.com/TTL-Cookbook-Donald-E-Lancaster/dp/0672210355/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1334820244&amp;sr=1-1">TTL Cookbook</a></span> by Don Lancaster is also extremely useful and provides pinouts for most of the 7400 series TTL chips that you would need for such a project.</p>
+<div id="attachment_38" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01819.png"><img class="size-large wp-image-38" title="Digital Computer Electronics" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01819-1024x768.png" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01819-1024x768.png 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01819-300x225.png 300w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01819.png 1280w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">The Golden Book</p></div>
+<div style="width: 410px" class="wp-caption alignnone"><img title="TTL Cookbook" src="http://www.swtpc.com/mholley/RTL_Cookbook/TTL_CookbookB.jpg" alt="" width="400" height="640" /><p class="wp-caption-text">The 7400 Dictionary</p></div>
+]]></content:encoded>
+			<wfw:commentRss>http://8-bitspaghetti.com/2012/04/two-useful-books/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>First Parts</title>
+		<link>http://8-bitspaghetti.com/2012/04/fist-parts/</link>
+		<comments>http://8-bitspaghetti.com/2012/04/fist-parts/#comments</comments>
+		<pubDate>Thu, 19 Apr 2012 07:15:16 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle]]></dc:creator>
+				<category><![CDATA[The Build]]></category>
+
+		<guid isPermaLink="false">http://8-bitspaghetti.com/?p=61</guid>
+		<description><![CDATA[<p>The first parts that I purchased for my computer included two breadboards and the logic chips to build a simple Arithmetic Logic Unit that could preform addition and subtraction on 4 bits. Initially I was going to build a 4 bit computer, but I later decided that having a computer that could only operate with [...]]]></description>
+				<content:encoded><![CDATA[<p>The first parts that I purchased for my computer included two breadboards and the logic chips to build a simple Arithmetic Logic Unit that could preform addition and subtraction on 4 bits. Initially I was going to build a 4 bit computer, but I later decided that having a computer that could only operate with integers from 0 to 15 would be rather boring. I learned something very important with my first purchase: NTE chips are not meant for projects. NTE chips are fairly common if you are searching for cheap parts, and the reason behind that is that they are replacements for the real thing. I constructed my 4 bit full-adder and only got accurate output %20 of the time. The rest of the time the output remained erroneous.</p>
+<div id="attachment_9" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01773.png"><img class="size-large wp-image-9" title="First Parts" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01773-1024x768.png" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01773-1024x768.png 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01773-300x225.png 300w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01773.png 1280w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">The First Parts</p></div>
+<div id="attachment_12" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01777.png"><img class="size-large wp-image-12" title="4-Bit ALU" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01777-1024x768.png" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01777-1024x768.png 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01777-300x225.png 300w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01777.png 1280w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">My dysfunctional ALU</p></div>
+]]></content:encoded>
+			<wfw:commentRss>http://8-bitspaghetti.com/2012/04/fist-parts/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+	</channel>
+</rss>

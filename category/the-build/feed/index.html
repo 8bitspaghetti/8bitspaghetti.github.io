@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>The Build &#8211; 8 Bit Spaghetti</title>
+	<atom:link href="http://8-bitspaghetti.com/category/the-build/feed/" rel="self" type="application/rss+xml" />
+	<link>http://8-bitspaghetti.com</link>
+	<description></description>
+	<lastBuildDate>Thu, 28 Mar 2013 07:58:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<item>
+		<title>Test Time</title>
+		<link>http://8-bitspaghetti.com/2012/04/test-time/</link>
+		<comments>http://8-bitspaghetti.com/2012/04/test-time/#comments</comments>
+		<pubDate>Thu, 26 Apr 2012 04:23:15 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle]]></dc:creator>
+				<category><![CDATA[The Build]]></category>
+
+		<guid isPermaLink="false">http://8-bitspaghetti.com/?p=106</guid>
+		<description><![CDATA[<p>I just finished wiring up the NVRAM chips to the computer. They are being addressed by a 8-bit program counter separate from the computer&#8217;s control counter. The control matrix changes its control word on the falling edge of the clock pulse. This allows the control to set up the 16-bit word, needed to tell which [...]]]></description>
+				<content:encoded><![CDATA[<p>I just finished wiring up the NVRAM chips to the computer. They are being addressed by a 8-bit program counter separate from the computer&#8217;s control counter. The control matrix changes its control word on the falling edge of the clock pulse. This allows the control to set up the 16-bit word, needed to tell which registers or operations are to be active, for the rising clock pulse.</p>
+<p>There are a few problems, however, that have made this a bit more difficult than it should be. Since the NVRAM chips I am using are CMOS driven, the TTL chips do not always provide the correct voltage to address the NVRAM chips correctly. Inversely, the NVRAM chips also have the tenancy to output incompatible voltages in regards to TTL. To remedy this I am using the last of my 8-bit three state buffers to convert the input and output of the chips to higher voltages. After I get the NVRAM chips functioning correctly, I only have to add the input and write/run logic as well as the output and the computer is finished (circuit-wise). I will be designing a steampunk-themed case for the enclosure. The case will be the final step before this project is complete.</p>
+<div id="attachment_107" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Almost.jpg"><img class="size-large wp-image-107" title="Coming Along" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Almost-1024x768.jpg" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/Almost-1024x768.jpg 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/Almost-300x225.jpg 300w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">And Let the Testing Begin.</p></div>
+]]></content:encoded>
+			<wfw:commentRss>http://8-bitspaghetti.com/2012/04/test-time/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+		<item>
+		<title>The Display</title>
+		<link>http://8-bitspaghetti.com/2012/04/display/</link>
+		<comments>http://8-bitspaghetti.com/2012/04/display/#comments</comments>
+		<pubDate>Thu, 19 Apr 2012 07:41:18 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+		<category><![CDATA[The Build]]></category>
+
+		<guid isPermaLink="false">http://8-bitspaghetti.com/?p=68</guid>
+		<description><![CDATA[<p>For the display I wanted something more interesting than a simple binary readout. I decided to go with the retro look and use some IV-9 russian Numitron tubes that can be conveniently driven by 5V with 20mA of current, the perfect amount to use a 4511 7-segment decoder. The only problem in the way of [...]]]></description>
+				<content:encoded><![CDATA[<p>For the display I wanted something more interesting than a simple binary readout. I decided to go with the retro look and use some IV-9 russian Numitron tubes that can be conveniently driven by 5V with 20mA of current, the perfect amount to use a 4511 7-segment decoder. The only problem in the way of a steampunk output for my computer was converting the base-16 output of my computer into 3 digits of base-10 binary coded decimals.</p>
+<p>Binary coded decimals are exactly what they sound like. The BCD system uses binary values 0-9 to express the base-10 digits that we use every day. For instance, the binary number 132 (10000100) would be 0001-0011-0010 expressed in binary coded decimal. To convert binary to BCD you can either design an incredibly complicated logic circuit to preform the operation, use a read-only memory (ROM) to output the correct values or use the method I chose of using an Arduino to do the conversion.</p>
+<p>My friend and I created an <a href="http://pastebin.com/qhMNm8ns" target="_blank">Arduino sketch</a> that takes an 8-bit input (0-255) and outputs 3 BCD digits. The output goes to a 3-digit Numitron readout board that I spent a good amount of time on.</p>
+<p><div id="attachment_29" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01810.png"><img class="size-large wp-image-29" title="3 Digit Numitron Readout" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01810-1024x768.png" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01810-1024x768.png 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01810-300x225.png 300w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01810.png 1280w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">3 Digit Numitron Readout</p></div><br />
+<script src="http://pastebin.com/embed_js.php?i=qhMNm8ns"></script></p>
+]]></content:encoded>
+			<wfw:commentRss>http://8-bitspaghetti.com/2012/04/display/feed/</wfw:commentRss>
+		<slash:comments>17</slash:comments>
+		</item>
+		<item>
+		<title>First Parts</title>
+		<link>http://8-bitspaghetti.com/2012/04/fist-parts/</link>
+		<comments>http://8-bitspaghetti.com/2012/04/fist-parts/#comments</comments>
+		<pubDate>Thu, 19 Apr 2012 07:15:16 +0000</pubDate>
+		<dc:creator><![CDATA[Kyle]]></dc:creator>
+				<category><![CDATA[The Build]]></category>
+
+		<guid isPermaLink="false">http://8-bitspaghetti.com/?p=61</guid>
+		<description><![CDATA[<p>The first parts that I purchased for my computer included two breadboards and the logic chips to build a simple Arithmetic Logic Unit that could preform addition and subtraction on 4 bits. Initially I was going to build a 4 bit computer, but I later decided that having a computer that could only operate with [...]]]></description>
+				<content:encoded><![CDATA[<p>The first parts that I purchased for my computer included two breadboards and the logic chips to build a simple Arithmetic Logic Unit that could preform addition and subtraction on 4 bits. Initially I was going to build a 4 bit computer, but I later decided that having a computer that could only operate with integers from 0 to 15 would be rather boring. I learned something very important with my first purchase: NTE chips are not meant for projects. NTE chips are fairly common if you are searching for cheap parts, and the reason behind that is that they are replacements for the real thing. I constructed my 4 bit full-adder and only got accurate output %20 of the time. The rest of the time the output remained erroneous.</p>
+<div id="attachment_9" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01773.png"><img class="size-large wp-image-9" title="First Parts" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01773-1024x768.png" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01773-1024x768.png 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01773-300x225.png 300w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01773.png 1280w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">The First Parts</p></div>
+<div id="attachment_12" style="width: 605px" class="wp-caption alignnone"><a href="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01777.png"><img class="size-large wp-image-12" title="4-Bit ALU" src="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01777-1024x768.png" alt="" width="595" height="446" srcset="http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01777-1024x768.png 1024w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01777-300x225.png 300w, http://8-bitspaghetti.com/wp-content/uploads/2012/04/DSC01777.png 1280w" sizes="(max-width: 595px) 100vw, 595px" /></a><p class="wp-caption-text">My dysfunctional ALU</p></div>
+]]></content:encoded>
+			<wfw:commentRss>http://8-bitspaghetti.com/2012/04/fist-parts/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+	</channel>
+</rss>
