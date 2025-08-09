@@ -71,7 +71,7 @@ body, .font1, .font-primary, .commentlist{font-family:Georgia, "Times New Roman"
 body, body.fixed_width{background-color:#000000;}
 body #page, .sf-menu li, #primary-nav ul.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active, .commentlist ul.children .even, .alt #commentform textarea{background-color:#ffffff;}
 hr, .fpost, .clip_box, .widget-title, #buddypress-page .item-list li, .metabar a, #morefoot .widget-title, #site #dsq-content h3, .post.fpost .entry, #soapbox .fboxinfo,  #primary-nav #nav_row, .fpost.sticky{border-color:#E9E9E9;}
-.canvas #page, .full_width #page, body.fixed_width{background-image:url('http://8-bitspaghetti.com/wp-content/uploads/2012/04/computer_222.png');}
+.canvas #page, .full_width #page, body.fixed_width{background-image:url('https://8-bitspaghetti.com/wp-content/uploads/2012/04/computer_222.png');}
 .canvas #page, .full_width #page, body.fixed_width{background-repeat:repeat;}
 .canvas #page, .full_width #page, body.fixed_width{background-position:0% 0%;}
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, a.site-title, .entry-title a, .entry-title a:hover, .widget-title a:hover, h3.widget-title a:hover{color:#000000;}
