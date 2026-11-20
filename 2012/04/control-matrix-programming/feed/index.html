@@ -15,9 +15,9 @@
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.8</generator>
 	<item>
-		<title>By: Kyle</title>
+		<title>By: Val</title>
 		<link>https://8-bitspaghetti.com/2012/04/control-matrix-programming/#comment-950</link>
-		<dc:creator><![CDATA[Kyle]]></dc:creator>
+		<dc:creator><![CDATA[Val]]></dc:creator>
 		<pubDate>Tue, 20 Jan 2015 18:19:22 +0000</pubDate>
 		<guid isPermaLink="false">https://8-bitspaghetti.com/?p=72#comment-950</guid>
 		<description><![CDATA[That is the Radioshack Electronics Learning Lab. It is essentially a glorified breadboard with extraneous components. It is super useful for prototyping. In this setup I utilized the momentary push switches and the DPDT switch (as well as the power rail).]]></description>
@@ -45,9 +45,9 @@
 ]]></content:encoded>
 	</item>
 	<item>
-		<title>By: Kyle</title>
+		<title>By: Val</title>
 		<link>https://8-bitspaghetti.com/2012/04/control-matrix-programming/#comment-143</link>
-		<dc:creator><![CDATA[Kyle]]></dc:creator>
+		<dc:creator><![CDATA[Val]]></dc:creator>
 		<pubDate>Tue, 26 Feb 2013 17:52:46 +0000</pubDate>
 		<guid isPermaLink="false">https://8-bitspaghetti.com/?p=72#comment-143</guid>
 		<description><![CDATA[I&#039;m not exactly sure what is causing that problem for you. If I recall correctly, when the control matrix sent out the (~RO,~AI) control, and then the A register was updated with the addressed byte in memory on the next rising clock pulse. Perhaps you are trying to run the control matrix and the registers on the same clock cycle. I set the structure of my computer up so that the control words for each OP are output on the falling clock pulses, and the registers are updated on the rising. The time in-between rising and falling pulses should be well enough for the memory to set up the current byte for loading.]]></description>
